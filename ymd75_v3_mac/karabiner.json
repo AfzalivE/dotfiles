@@ -72,7 +72,7 @@
                         ]
                     },
                     {
-                      "description": "Change command+F14 to command+option+power (lock)",
+                      "description": "Change fn+F14 to command+option+power (lock)",
                       "manipulators": [
                           {
                               "from": {
