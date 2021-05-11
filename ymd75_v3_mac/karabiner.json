@@ -47,6 +47,44 @@
                         ]
                     },
                     {
+                      "description": "Disable Command-Shift-Option-Control-Period (.)",
+                      "manipulators": [
+                        {
+                          "type": "basic",
+                          "from": {
+                            "key_code": "period",
+                            "modifiers": {
+                              "mandatory": [
+                                "command",
+                                "shift",
+                                "option",
+                                "control"
+                              ]
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "description": "Disable Command-Shift-Option-Control-Comma (,)",
+                      "manipulators": [
+                        {
+                          "type": "basic",
+                          "from": {
+                            "key_code": "comma",
+                            "modifiers": {
+                              "mandatory": [
+                                "command",
+                                "shift",
+                                "option",
+                                "control"
+                              ]
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
                         "description": "Change control + delete to forward delete (rev 2)",
                         "manipulators": [
                             {
@@ -72,30 +110,30 @@
                         ]
                     },
                     {
-                      "description": "Change fn+F14 to command+option+power (lock)",
-                      "manipulators": [
-                          {
-                              "from": {
-                                  "key_code": "f14",
-                                  "modifiers": {
-                                    "mandatory": [
-                                      "fn"
-                                    ]
-                                  }
-                              },
-                              "to": [
-                                  {
-                                      "key_code": "power",
-                                      "modifiers": [
-                                        "left_command",
-                                        "left_option"
-                                      ]
-                                  }
-                              ],
-                              "type": "basic"
-                          }
-                      ]
-                  }
+                        "description": "Change fn+F14 to command+option+power (lock)",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "f14",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "fn"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "power",
+                                        "modifiers": [
+                                            "left_command",
+                                            "left_option"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    }
                 ]
             },
             "devices": [
@@ -110,6 +148,32 @@
                     },
                     "ignore": false,
                     "manipulate_caps_lock_led": false,
+                    "simple_modifications": []
+                },
+                {
+                    "disable_built_in_keyboard_if_exists": false,
+                    "fn_function_keys": [],
+                    "identifiers": {
+                        "is_keyboard": true,
+                        "is_pointing_device": false,
+                        "product_id": 34304,
+                        "vendor_id": 1452
+                    },
+                    "ignore": false,
+                    "manipulate_caps_lock_led": true,
+                    "simple_modifications": []
+                },
+                {
+                    "disable_built_in_keyboard_if_exists": false,
+                    "fn_function_keys": [],
+                    "identifiers": {
+                        "is_keyboard": true,
+                        "is_pointing_device": false,
+                        "product_id": 632,
+                        "vendor_id": 1452
+                    },
+                    "ignore": false,
+                    "manipulate_caps_lock_led": true,
                     "simple_modifications": []
                 }
             ],
@@ -150,7 +214,7 @@
                     },
                     "to": [
                         {
-                            "apple_vendor_keyboard_key_code": "launchpad"
+                            "apple_vendor_keyboard_key_code": "spotlight"
                         }
                     ]
                 },
