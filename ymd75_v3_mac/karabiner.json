@@ -47,42 +47,42 @@
                         ]
                     },
                     {
-                      "description": "Disable Command-Shift-Option-Control-Period (.)",
-                      "manipulators": [
-                        {
-                          "type": "basic",
-                          "from": {
-                            "key_code": "period",
-                            "modifiers": {
-                              "mandatory": [
-                                "command",
-                                "shift",
-                                "option",
-                                "control"
-                              ]
+                        "description": "Disable Command-Shift-Option-Control-Period (.)",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "period",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "command",
+                                            "shift",
+                                            "option",
+                                            "control"
+                                        ]
+                                    }
+                                },
+                                "type": "basic"
                             }
-                          }
-                        }
-                      ]
+                        ]
                     },
                     {
-                      "description": "Disable Command-Shift-Option-Control-Comma (,)",
-                      "manipulators": [
-                        {
-                          "type": "basic",
-                          "from": {
-                            "key_code": "comma",
-                            "modifiers": {
-                              "mandatory": [
-                                "command",
-                                "shift",
-                                "option",
-                                "control"
-                              ]
+                        "description": "Disable Command-Shift-Option-Control-Comma (,)",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "comma",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "command",
+                                            "shift",
+                                            "option",
+                                            "control"
+                                        ]
+                                    }
+                                },
+                                "type": "basic"
                             }
-                          }
-                        }
-                      ]
+                        ]
                     },
                     {
                         "description": "Change control + delete to forward delete (rev 2)",
@@ -110,7 +110,7 @@
                         ]
                     },
                     {
-                        "description": "Change fn+F14 to command+option+power (lock)",
+                        "description": "Change fn+F14 to ctrl+command+q (lock)",
                         "manipulators": [
                             {
                                 "from": {
@@ -123,10 +123,10 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "power",
+                                        "key_code": "q",
                                         "modifiers": [
                                             "left_command",
-                                            "left_option"
+                                            "left_control"
                                         ]
                                     }
                                 ],
@@ -175,6 +175,19 @@
                     "ignore": false,
                     "manipulate_caps_lock_led": true,
                     "simple_modifications": []
+                },
+                {
+                    "disable_built_in_keyboard_if_exists": false,
+                    "fn_function_keys": [],
+                    "identifiers": {
+                        "is_keyboard": true,
+                        "is_pointing_device": false,
+                        "product_id": 835,
+                        "vendor_id": 1452
+                    },
+                    "ignore": false,
+                    "manipulate_caps_lock_led": true,
+                    "simple_modifications": []
                 }
             ],
             "fn_function_keys": [
@@ -214,7 +227,7 @@
                     },
                     "to": [
                         {
-                            "apple_vendor_keyboard_key_code": "spotlight"
+                            "key_code": "f14"
                         }
                     ]
                 },
