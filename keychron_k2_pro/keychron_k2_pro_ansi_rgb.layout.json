@@ -1,7 +1,24 @@
 {
   "name": "Keychron K2 Pro ANSI RGB",
   "vendorProductId": 875823648,
-  "macros": ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""],
+  "macros": [
+    "{+KC_LGUI}{+KC_LCTL}{+KC_Q}{-KC_Q}{-KC_LGUI}{-KC_LCTL}",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+  ],
   "layers": [
     [
       "KC_ESC",
