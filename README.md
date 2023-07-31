@@ -8,7 +8,7 @@ The firmware file contains a QMK firmware for YMD75 v3 PCB with a custom keymap 
 
 ![keymap_layer0](https://github.com/AfzalivE/dotfiles/blob/master/ymd75_v3_mac/Screen%20Shot%202021-02-02%20at%2012.37.50%20AM.png?raw=true)
 
-![keymap_layer1](https://github.com/AfzalivE/dotfiles/blob/master/ymd75_v3_mac/Screen%20Shot%202021-02-02%20at%2012.37.59%20AM.png?raw=true)
+![keymap_layer1](https://github.com/AfzalivE/dotfiles/blob/master/ymd75_v3_mac/Screen%20Shot%202021-02-02%20at%201.11.48%20AM.png?raw=true)
 
 Do note that the shortcut to put the keyboard in bootloader is to hold Space + B and then plug in the keyboard. If you have QMK Toolbox open, you will see "Atmel DFU device connected".
 
